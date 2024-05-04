@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-04T16:24:56 IST" name="Surefire suite" finished-at="2024-05-04T16:25:14 IST" duration-ms="18093">
+  <suite started-at="2024-05-04T23:35:01 IST" name="Surefire suite" finished-at="2024-05-04T23:35:47 IST" duration-ms="46643">
     <groups>
     </groups>
-    <test started-at="2024-05-04T16:24:56 IST" name="Surefire test" finished-at="2024-05-04T16:25:14 IST" duration-ms="18093">
+    <test started-at="2024-05-04T23:35:01 IST" name="Surefire test" finished-at="2024-05-04T23:35:47 IST" duration-ms="46643">
       <class name="ayroid.AuthenticationTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:ayroid.AuthenticationTest@dd3b207]" started-at="2024-05-04T16:24:56 IST" name="setUp" finished-at="2024-05-04T16:24:58 IST" duration-ms="2090" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ayroid.AuthenticationTest@b59d31]" started-at="2024-05-04T23:35:01 IST" name="setUp" finished-at="2024-05-04T23:35:03 IST" duration-ms="2596" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginSuccess(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ayroid.AuthenticationTest@dd3b207]" started-at="2024-05-04T16:24:58 IST" name="loginSuccess" data-provider="loginData" finished-at="2024-05-04T16:25:02 IST" duration-ms="4205" status="PASS">
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.Boolean)[pri:0, instance:ayroid.AuthenticationTest@b59d31]" started-at="2024-05-04T23:35:17 IST" name="testLogin" data-provider="loginData" finished-at="2024-05-04T23:35:22 IST" duration-ms="4130" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,11 +28,16 @@
                 <![CDATA[Account Does Not Exist]]>
               </value>
             </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginSuccess -->
-        <test-method signature="loginSuccess(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ayroid.AuthenticationTest@dd3b207]" started-at="2024-05-04T16:25:02 IST" name="loginSuccess" data-provider="loginData" finished-at="2024-05-04T16:25:06 IST" duration-ms="3734" status="PASS">
+        </test-method> <!-- testLogin -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.Boolean)[pri:0, instance:ayroid.AuthenticationTest@b59d31]" started-at="2024-05-04T23:35:22 IST" name="testLogin" data-provider="loginData" finished-at="2024-05-04T23:35:25 IST" duration-ms="3761" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -49,11 +54,16 @@
                 <![CDATA[Invalid Password]]>
               </value>
             </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginSuccess -->
-        <test-method signature="loginSuccess(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ayroid.AuthenticationTest@dd3b207]" started-at="2024-05-04T16:25:06 IST" name="loginSuccess" data-provider="loginData" finished-at="2024-05-04T16:25:09 IST" duration-ms="3730" status="PASS">
+        </test-method> <!-- testLogin -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.Boolean)[pri:0, instance:ayroid.AuthenticationTest@b59d31]" started-at="2024-05-04T23:35:25 IST" name="testLogin" data-provider="loginData" finished-at="2024-05-04T23:35:29 IST" duration-ms="3732" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -70,11 +80,16 @@
                 <![CDATA[Account Does Not Exist]]>
               </value>
             </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginSuccess -->
-        <test-method signature="loginSuccess(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ayroid.AuthenticationTest@dd3b207]" started-at="2024-05-04T16:25:09 IST" name="loginSuccess" data-provider="loginData" finished-at="2024-05-04T16:25:13 IST" duration-ms="3732" status="PASS">
+        </test-method> <!-- testLogin -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.Boolean)[pri:0, instance:ayroid.AuthenticationTest@b59d31]" started-at="2024-05-04T23:35:29 IST" name="testLogin" data-provider="loginData" finished-at="2024-05-04T23:35:33 IST" duration-ms="3740" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -91,15 +106,234 @@
                 <![CDATA[Login Successful]]>
               </value>
             </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginSuccess -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ayroid.AuthenticationTest@dd3b207]" started-at="2024-05-04T16:25:13 IST" name="tearDown" finished-at="2024-05-04T16:25:14 IST" duration-ms="574" status="PASS">
+        </test-method> <!-- testLogin -->
+        <test-method signature="testLogOut()[pri:0, instance:ayroid.AuthenticationTest@b59d31]" started-at="2024-05-04T23:35:33 IST" name="testLogOut" finished-at="2024-05-04T23:35:36 IST" depends-on-methods="ayroid.AuthenticationTest.testLogin" duration-ms="3141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogOut -->
+        <test-method signature="testRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ayroid.AuthenticationTest@b59d31]" started-at="2024-05-04T23:35:36 IST" name="testRegister" data-provider="registerData" finished-at="2024-05-04T23:35:40 IST" depends-on-methods="ayroid.AuthenticationTest.testLogOut" duration-ms="3790" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ayroid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ayroids@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ayroid--]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Username or Email already exists]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method signature="testRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ayroid.AuthenticationTest@b59d31]" started-at="2024-05-04T23:35:40 IST" name="testRegister" data-provider="registerData" finished-at="2024-05-04T23:35:44 IST" depends-on-methods="ayroid.AuthenticationTest.testLogOut" duration-ms="3774" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[testtest]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Account Created Successfully]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ayroid.AuthenticationTest@b59d31]" started-at="2024-05-04T23:35:44 IST" name="tearDown" finished-at="2024-05-04T23:35:44 IST" duration-ms="571" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- ayroid.AuthenticationTest -->
+      <class name="ayroid.IdeosTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ayroid.IdeosTest@282003e1]" started-at="2024-05-04T23:35:03 IST" name="setUp" finished-at="2024-05-04T23:35:04 IST" duration-ms="1197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogin()[pri:0, instance:ayroid.IdeosTest@282003e1]" started-at="2024-05-04T23:35:04 IST" name="testLogin" finished-at="2024-05-04T23:35:09 IST" duration-ms="4301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method signature="testCreateIdeo()[pri:0, instance:ayroid.IdeosTest@282003e1]" started-at="2024-05-04T23:35:09 IST" name="testCreateIdeo" finished-at="2024-05-04T23:35:15 IST" depends-on-methods="ayroid.IdeosTest.testLogin" duration-ms="6563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateIdeo -->
+        <test-method signature="testDeleteIdeo()[pri:0, instance:ayroid.IdeosTest@282003e1]" started-at="2024-05-04T23:35:15 IST" name="testDeleteIdeo" finished-at="2024-05-04T23:35:17 IST" depends-on-methods="ayroid.IdeosTest.testCreateIdeo" duration-ms="2150" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#\36 628d1e4d9f1d378419a9064 > img"}
+  (Session info: chrome=124.0.6367.118)
+  (Driver info: chromedriver=123.0.6312.105 (399174dbe6eff0f59de9a6096129c0c827002b3a-refs/branch-heads/6312@{#761}),platform=Linux 6.8.0-31-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 15:53:30'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-31-generic', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:42209}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=123.0.6312.105 (399174dbe6eff0f59de9a6096129c0c827002b3a-refs/branch-heads/6312@{#761}), userDataDir=/tmp/.org.chromium.Chromium.Y9BFeT}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=124.0.6367.118, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 0ed683a4be88ab0f95686dea9e7b1eff]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#\36 628d1e4d9f1d378419a9064 > img"}
+  (Session info: chrome=124.0.6367.118)
+  (Driver info: chromedriver=123.0.6312.105 (399174dbe6eff0f59de9a6096129c0c827002b3a-refs/branch-heads/6312@{#761}),platform=Linux 6.8.0-31-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 15:53:30'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-31-generic', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:42209}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=123.0.6312.105 (399174dbe6eff0f59de9a6096129c0c827002b3a-refs/branch-heads/6312@{#761}), userDataDir=/tmp/.org.chromium.Chromium.Y9BFeT}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=124.0.6367.118, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 0ed683a4be88ab0f95686dea9e7b1eff
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:533)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:302)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:379)
+at org.openqa.selenium.By$ByCssSelector.findElement(By.java:406)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:294)
+at ayroid.Ideos.deleteIdeo(Ideos.java:40)
+at ayroid.IdeosTest.testDeleteIdeo(IdeosTest.java:46)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteIdeo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ayroid.IdeosTest@282003e1]" started-at="2024-05-04T23:35:44 IST" name="tearDown" finished-at="2024-05-04T23:35:47 IST" duration-ms="3134" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=124.0.6367.118)
+  (Driver info: chromedriver=123.0.6312.105 (399174dbe6eff0f59de9a6096129c0c827002b3a-refs/branch-heads/6312@{#761}),platform=Linux 6.8.0-31-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5 milliseconds
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 15:53:30'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-31-generic', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:42209}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=123.0.6312.105 (399174dbe6eff0f59de9a6096129c0c827002b3a-refs/branch-heads/6312@{#761}), userDataDir=/tmp/.org.chromium.Chromium.Y9BFeT}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=124.0.6367.118, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 0ed683a4be88ab0f95686dea9e7b1eff]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=124.0.6367.118)
+  (Driver info: chromedriver=123.0.6312.105 (399174dbe6eff0f59de9a6096129c0c827002b3a-refs/branch-heads/6312@{#761}),platform=Linux 6.8.0-31-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5 milliseconds
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 15:53:30'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-31-generic', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:42209}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=123.0.6312.105 (399174dbe6eff0f59de9a6096129c0c827002b3a-refs/branch-heads/6312@{#761}), userDataDir=/tmp/.org.chromium.Chromium.Y9BFeT}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=124.0.6367.118, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 0ed683a4be88ab0f95686dea9e7b1eff
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:533)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:302)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:387)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:294)
+at ayroid.Authentication.logout(Authentication.java:47)
+at ayroid.IdeosTest.tearDown(IdeosTest.java:53)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+at org.testng.TestRunner.afterRun(TestRunner.java:818)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ayroid.IdeosTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

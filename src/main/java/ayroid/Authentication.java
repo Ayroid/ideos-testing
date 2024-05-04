@@ -4,7 +4,13 @@ import org.openqa.selenium.*;
 
 public class Authentication {
 
+    UtilMethods utils = new UtilMethods();
+
     public void login(WebDriver driver, String username, String password) {
+
+        utils.goToUrl(driver, "http://localhost:5173/auth/login");
+        utils.customTimedDelay(3);
+
         WebElement usernameField = driver.findElement(By.cssSelector("#loginEmail"));
         usernameField.sendKeys(username);
 
@@ -16,6 +22,10 @@ public class Authentication {
     }
 
     public void register(WebDriver driver, String username, String email, String password) {
+
+        utils.goToUrl(driver, "http://localhost:5173/auth/signup");
+        utils.customTimedDelay(3);
+
         WebElement usernameField = driver.findElement(By.cssSelector("#signUpUsername"));
         usernameField.sendKeys(username);
 
@@ -30,6 +40,10 @@ public class Authentication {
     }
 
     public void logout(WebDriver driver) {
+
+        utils.goToUrl(driver, "http://localhost:5173/settings");
+        utils.customTimedDelay(3);
+
         WebElement logoutButton = driver.findElement(
                 By.xpath("//*[@id=\"root\"]/div/div[1]/div[2]/button"));
         logoutButton.click();
@@ -41,10 +55,7 @@ public class Authentication {
         UtilMethods utils = new UtilMethods();
         WebDriver driver = utils.setUpWebDriver();
 
-        utils.goToUrl(driver, "http://localhost:5173");
-        utils.customTimedDelay(3);
-        auth.login(driver, "Ayroid", "ayroid---");
-        utils.customTimedDelay(3);
+        auth.login(driver, "Ayroid", "ayroid--");
         utils.tearDown(driver);
     }
 }

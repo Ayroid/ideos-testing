@@ -19,8 +19,6 @@ public class AuthenticationTest {
 
     @Test(dataProvider = "loginData")
     public void testLogin(String username, String password, String expectedToastMessage, Boolean expectedLoginSuccess) {
-        utils.goToUrl(driver, "http://localhost:5173/auth/login");
-        utils.customTimedDelay(3);
         auth.login(driver, username, password);
         WebDriverWait wait = new WebDriverWait(driver, 10);
         WebElement toastElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#\\31 ")));
@@ -44,15 +42,11 @@ public class AuthenticationTest {
 
     @Test(dependsOnMethods = "testLogin")
     public void testLogOut() {
-        utils.goToUrl(driver, "http://localhost:5173/settings");
-        utils.customTimedDelay(3);
         auth.logout(driver);
     }
 
     @Test(dataProvider = "registerData", dependsOnMethods = "testLogOut")
     public void testRegister(String username, String email, String password, String expectedToastMessage) {
-        utils.goToUrl(driver, "http://localhost:5173/auth/signup");
-        utils.customTimedDelay(3);
         auth.register(driver, username, email, password);
         WebDriverWait wait = new WebDriverWait(driver, 10);
         WebElement toastElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#\\31 ")));

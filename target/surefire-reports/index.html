@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-passed">Surefire suite</span>
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="ayroid.IdeosTest" class="method navigator-link" hash-for-method="testDeleteIdeo">testDeleteIdeo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,22 +117,47 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="ayroid.AuthenticationTest" class="method navigator-link" hash-for-method="loginSuccess(Ayroidd, ayroid--, Account Does Not Exist)">loginSuccess(Ayroidd, ayroid--, Account Does Not Exist)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="ayroid.IdeosTest" class="method navigator-link" hash-for-method="testCreateIdeo">testCreateIdeo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="ayroid.AuthenticationTest" class="method navigator-link" hash-for-method="loginSuccess(Ayroidd, ayroid--, Account Does Not Exist)">loginSuccess(Ayroidd, ayroid--, Account Does Not Exist)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="ayroid.AuthenticationTest" class="method navigator-link" hash-for-method="testLogOut">testLogOut</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="ayroid.AuthenticationTest" class="method navigator-link" hash-for-method="loginSuccess(Ayroid, ayroid---, Invalid Password)">loginSuccess(Ayroid, ayroid---, Invalid Password)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="ayroid.AuthenticationTest" class="method navigator-link" hash-for-method="testLogin(Ayroid, ayroid---, Invalid Password, false)">testLogin(Ayroid, ayroid---, Invalid Password, false)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="ayroid.AuthenticationTest" class="method navigator-link" hash-for-method="loginSuccess(Ayroid, ayroid--, Login Successful)">loginSuccess(Ayroid, ayroid--, Login Successful)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="ayroid.AuthenticationTest" class="method navigator-link" hash-for-method="testLogin(Ayroidd, ayroid--, Account Does Not Exist, false)">testLogin(Ayroidd, ayroid--, Account Does Not Exist, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="ayroid.AuthenticationTest" class="method navigator-link" hash-for-method="testLogin(Ayroidd, ayroid--, Account Does Not Exist, false)">testLogin(Ayroidd, ayroid--, Account Does Not Exist, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="ayroid.AuthenticationTest" class="method navigator-link" hash-for-method="testLogin(Ayroid, ayroid--, Login Successful, true)">testLogin(Ayroid, ayroid--, Login Successful, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="ayroid.IdeosTest" class="method navigator-link" hash-for-method="testLogin">testLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="ayroid.AuthenticationTest" class="method navigator-link" hash-for-method="testRegister(Ayroid, ayroids@gmail.com, ayroid--, Username or Email already exists)">testRegister(Ayroid, ayroids@gmail.com, ayroid--, Username or Email already exists)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="ayroid.AuthenticationTest" class="method navigator-link" hash-for-method="testRegister(Test, test@gmail.com, testtest, Account Created Successfully)">testRegister(Test, test@gmail.com, testtest, Account Created Successfully)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -133,6 +172,65 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">ayroid.IdeosTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteIdeo">
+                  </a> <!-- testDeleteIdeo -->
+                  <span class="method-name">testDeleteIdeo</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#\36 628d1e4d9f1d378419a9064 &gt; img&quot;}
+  (Session info: chrome=124.0.6367.118)
+  (Driver info: chromedriver=123.0.6312.105 (399174dbe6eff0f59de9a6096129c0c827002b3a-refs/branch-heads/6312@{#761}),platform=Linux 6.8.0-31-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-31-generic&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:42209}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=123.0.6312.105 (399174dbe6eff0f59de9a6096129c0c827002b3a-refs/branch-heads/6312@{#761}), userDataDir=/tmp/.org.chromium.Chromium.Y9BFeT}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=124.0.6367.118, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 0ed683a4be88ab0f95686dea9e7b1eff
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:533)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:302)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:379)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:406)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:294)
+	at ayroid.Ideos.deleteIdeo(Ideos.java:40)
+	at ayroid.IdeosTest.testDeleteIdeo(IdeosTest.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ayroid.IdeosTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateIdeo">
+                  </a> <!-- testCreateIdeo -->
+                  <span class="method-name">testCreateIdeo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin">
+                  </a> <!-- testLogin -->
+                  <span class="method-name">testLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -141,34 +239,57 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginSuccess(Ayroidd, ayroid--, Account Does Not Exist)">
-                  </a> <!-- loginSuccess(Ayroidd, ayroid-, Account Does Not Exist) -->
-                  <span class="method-name">loginSuccess</span>
-                  <span class="parameters">(Ayroidd,ayroid--,Account Does Not Exist)</span>
+                  <a name="testLogOut">
+                  </a> <!-- testLogOut -->
+                  <span class="method-name">testLogOut</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginSuccess(Ayroidd, ayroid--, Account Does Not Exist)">
-                  </a> <!-- loginSuccess(Ayroidd, ayroid-, Account Does Not Exist) -->
-                  <span class="method-name">loginSuccess</span>
-                  <span class="parameters">(Ayroidd,ayroid--,Account Does Not Exist)</span>
+                  <a name="testLogin(Ayroid, ayroid---, Invalid Password, false)">
+                  </a> <!-- testLogin(Ayroid, ayroid-, Invalid Password, false) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(Ayroid,ayroid---,Invalid Password,false)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginSuccess(Ayroid, ayroid---, Invalid Password)">
-                  </a> <!-- loginSuccess(Ayroid, ayroid-, Invalid Password) -->
-                  <span class="method-name">loginSuccess</span>
-                  <span class="parameters">(Ayroid,ayroid---,Invalid Password)</span>
+                  <a name="testLogin(Ayroidd, ayroid--, Account Does Not Exist, false)">
+                  </a> <!-- testLogin(Ayroidd, ayroid-, Account Does Not Exist, false) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(Ayroidd,ayroid--,Account Does Not Exist,false)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginSuccess(Ayroid, ayroid--, Login Successful)">
-                  </a> <!-- loginSuccess(Ayroid, ayroid-, Login Successful) -->
-                  <span class="method-name">loginSuccess</span>
-                  <span class="parameters">(Ayroid,ayroid--,Login Successful)</span>
+                  <a name="testLogin(Ayroidd, ayroid--, Account Does Not Exist, false)">
+                  </a> <!-- testLogin(Ayroidd, ayroid-, Account Does Not Exist, false) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(Ayroidd,ayroid--,Account Does Not Exist,false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(Ayroid, ayroid--, Login Successful, true)">
+                  </a> <!-- testLogin(Ayroid, ayroid-, Login Successful, true) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(Ayroid,ayroid--,Login Successful,true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegister(Ayroid, ayroids@gmail.com, ayroid--, Username or Email already exists)">
+                  </a> <!-- testRegister(Ayroid, ayroids@gmail.com, ayroid-, Username or Email already exists) -->
+                  <span class="method-name">testRegister</span>
+                  <span class="parameters">(Ayroid,ayroids@gmail.com,ayroid--,Username or Email already exists)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegister(Test, test@gmail.com, testtest, Account Created Successfully)">
+                  </a> <!-- testRegister(Test, test@gmail.com, testtest, Account Created Successfully) -->
+                  <span class="method-name">testRegister</span>
+                  <span class="parameters">(Test,test@gmail.com,testtest,Account Created Successfully)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -184,6 +305,7 @@
 &lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;ayroid.IdeosTest&quot;/&gt;
       &lt;class name=&quot;ayroid.AuthenticationTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
@@ -198,7 +320,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (1 class)</span>
+                <span class="test-name">Surefire test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -224,28 +346,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginSuccess')
-data.setCell(0, 2, 'ayroid.AuthenticationTest')
-data.setCell(0, 3, 4205);
+data.setCell(0, 1, 'testCreateIdeo')
+data.setCell(0, 2, 'ayroid.IdeosTest')
+data.setCell(0, 3, 6563);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginSuccess')
-data.setCell(1, 2, 'ayroid.AuthenticationTest')
-data.setCell(1, 3, 3734);
+data.setCell(1, 1, 'testLogin')
+data.setCell(1, 2, 'ayroid.IdeosTest')
+data.setCell(1, 3, 4301);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginSuccess')
+data.setCell(2, 1, 'testLogin')
 data.setCell(2, 2, 'ayroid.AuthenticationTest')
-data.setCell(2, 3, 3732);
+data.setCell(2, 3, 4130);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'loginSuccess')
+data.setCell(3, 1, 'testRegister')
 data.setCell(3, 2, 'ayroid.AuthenticationTest')
-data.setCell(3, 3, 3730);
+data.setCell(3, 3, 3790);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testRegister')
+data.setCell(4, 2, 'ayroid.AuthenticationTest')
+data.setCell(4, 3, 3774);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testLogin')
+data.setCell(5, 2, 'ayroid.AuthenticationTest')
+data.setCell(5, 3, 3761);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testLogin')
+data.setCell(6, 2, 'ayroid.AuthenticationTest')
+data.setCell(6, 3, 3740);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testLogin')
+data.setCell(7, 2, 'ayroid.AuthenticationTest')
+data.setCell(7, 3, 3732);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testLogOut')
+data.setCell(8, 2, 'ayroid.AuthenticationTest')
+data.setCell(8, 3, 3141);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testDeleteIdeo')
+data.setCell(9, 2, 'ayroid.IdeosTest')
+data.setCell(9, 3, 2150);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 39 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -276,25 +422,70 @@ return data;
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ayroid.IdeosTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">2600 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">loginSuccess(Ayroidd, ayroid--, Account Does Not Exist)</span>
-                <span class="method-start">2109 ms</span>
+                <span class="method-name">testLogin</span>
+                <span class="method-start">3814 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">loginSuccess(Ayroid, ayroid---, Invalid Password)</span>
-                <span class="method-start">6316 ms</span>
+                <span class="method-name">testCreateIdeo</span>
+                <span class="method-start">8119 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">loginSuccess(Ayroidd, ayroid--, Account Does Not Exist)</span>
-                <span class="method-start">10051 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDeleteIdeo</span>
+                <span class="method-start">14684 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ayroid.AuthenticationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testLogin(Ayroidd, ayroid--, Account Does Not Exist, false)</span>
+                <span class="method-start">16848 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">loginSuccess(Ayroid, ayroid--, Login Successful)</span>
-                <span class="method-start">13782 ms</span>
+                <span class="method-name">testLogin(Ayroid, ayroid---, Invalid Password, false)</span>
+                <span class="method-start">20979 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(Ayroidd, ayroid--, Account Does Not Exist, false)</span>
+                <span class="method-start">24741 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(Ayroid, ayroid--, Login Successful, true)</span>
+                <span class="method-start">28474 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogOut</span>
+                <span class="method-start">32216 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegister(Ayroid, ayroids@gmail.com, ayroid--, Username or Email already exists)</span>
+                <span class="method-start">35359 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegister(Test, test@gmail.com, testtest, Account Created Successfully)</span>
+                <span class="method-start">39150 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">17515 ms</span>
+                <span class="method-start">42925 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ayroid.IdeosTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">43496 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
