@@ -15,15 +15,24 @@ public class Authentication {
         nextButton.click();
     }
 
-    public void register(WebDriver driver, String username, String password) {
-        WebElement usernameField = driver.findElement(By.cssSelector("#registerEmail"));
+    public void register(WebDriver driver, String username, String email, String password) {
+        WebElement usernameField = driver.findElement(By.cssSelector("#signUpUsername"));
         usernameField.sendKeys(username);
 
-        WebElement passwordField = driver.findElement(By.cssSelector("#registerPassword"));
+        WebElement emailField = driver.findElement(By.cssSelector("#signUpEmail"));
+        emailField.sendKeys(email);
+
+        WebElement passwordField = driver.findElement(By.cssSelector("#signUpPassword"));
         passwordField.sendKeys(password);
 
-        WebElement nextButton = driver.findElement(By.cssSelector("#registerAuthDiv > form > button"));
+        WebElement nextButton = driver.findElement(By.cssSelector("#signUpAuthDiv > form > button"));
         nextButton.click();
+    }
+
+    public void logout(WebDriver driver) {
+        WebElement logoutButton = driver.findElement(
+                By.xpath("//*[@id=\"root\"]/div/div[1]/div[2]/button"));
+        logoutButton.click();
     }
 
     public static void main(String[] args) {
